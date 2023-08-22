@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="a studio to promote your business" />
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
@@ -20,17 +20,20 @@
   <!-- Header -->
   <header class="header-block">
     <div class="container header">
-      <!-- Navigation links -->
       <nav class="nav-block">
-        <!-- Logo link -->
         <a class="logo link" href="./index.html">Web<span class="logo-part-two">Studio</span></a>
-        <ul class="nav list">
+        <ul class="nav list vis-on-tab">
           <li><a class="nav link current" href="./index.html">Studio</a></li>
           <li><a class="nav link" href="./portfolio.html">Portfolio</a></li>
           <li><a class="nav link" href="">Contacts</a></li>
         </ul>
+        <button class="telmode-btn-nav-menu js-open-menu" type="button">
+          <svg class="telmode-btn-nav-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-btn-menu-hamburger"></use>
+          </svg>
+        </button>
       </nav>
-      <address class="nav-address-block">
+      <address class="nav-address-block vis-on-tab">
         <ul class="nav-address list">
           <li>
             <a class="address link" href="mailto:info@devstudio.com">
@@ -58,7 +61,7 @@
         <h2 class="visually-hidden">Service Description</h2>
         <ul class="service-description list">
           <li class="service-description-item">
-            <div class="servise-description-icon-block">
+            <div class="servise-description-icon-block vis-on-desk">
               <svg class="icon-antenna" width="64" height="64">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
@@ -70,7 +73,7 @@
             </p>
           </li>
           <li class="service-description-item">
-            <div class="servise-description-icon-block">
+            <div class="servise-description-icon-block vis-on-desk">
               <svg class="icon-clock" width="64" height="64">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
@@ -82,7 +85,7 @@
             </p>
           </li>
           <li class="service-description-item">
-            <div class="servise-description-icon-block">
+            <div class="servise-description-icon-block vis-on-desk">
               <svg class="icon-diagram" width="64" height="64">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
@@ -94,7 +97,7 @@
             </p>
           </li>
           <li class="service-description-item">
-            <div class="servise-description-icon-block">
+            <div class="servise-description-icon-block vis-on-desk">
               <svg class="icon-astronaut" width="64" height="64">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
@@ -109,7 +112,7 @@
       </div>
     </section>
     <!-- product image -->
-    <section class="product-image-section">
+    <section class="product-image-section vis-on-desk">
       <div class="container product-image">
         <h2 class="headline-two">What are we doing</h2>
         <ul class="product-img list">
@@ -336,9 +339,7 @@
   <footer class="footer-section">
     <div class="container footer">
       <div class="footer-text-block">
-        <!-- Logo link -->
         <a class="logo link" href="./index.html">Web<span class="footer-logo-part-two">Studio</span></a>
-        <!-- Footer text -->
         <p class="footer-text">
           Increase the flow of customers and sales for your business with digital
           marketing & growth solutions.
@@ -432,7 +433,8 @@
         </div>
         <div class="call-back-form-comment-item-wrapper">
           <label class="call-back-form-label" for="user-comment">Comment</label>
-          <textarea class="call-back-form-textarea" id="user-comment" name="user_comment" placeholder="Text input"></textarea>
+          <textarea class="call-back-form-textarea" id="user-comment" name="user_comment"
+            placeholder="Text input"></textarea>
         </div>
         <div class="call-back-form-checkbox-wrapper">
           <input class="call-back-form-checkbox visually-hidden" id="user-privacy" type="checkbox" name="user_privacy"
@@ -450,6 +452,63 @@
       </form>
     </div>
   </div>
+  <!-- MODAL--MENU -->
+  <div class="menu-modal js-menu-container is-open" id="mobile-menu">
+    <div class="mobile-menu-container">
+      <div class="high-part">
+        <button class="modal-close-btn menu-toggle js-close-menu" type="button">
+          <svg class="logo-icon-modal-close-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav-item"><a class="menu-nav link" href="./index.html">Studio</a></li>
+            <li class="mobile-menu-nav-item"><a class="menu-nav link" href="./portfolio.html">Portfolio</a></li>
+            <li class="mobile-menu-nav-item"><a class="menu-nav link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="low-part">
+        <a class="mobile-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        <a class="mobile-menu-email link" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+        <div class="mobile-menu-icon-block">
+          <ul class="mobile-menu-icon-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-icon-link" href="https://www.instagram.com/">
+                <svg class="logo-icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-icon-link" href="https://twitter.com/">
+                <svg class="logo-icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-icon-link" href="https://www.facebook.com/">
+                <svg class="logo-icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-icon-link" href="https://www.linkedin.com/">
+                <svg class="logo-icon-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script defer="" src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
