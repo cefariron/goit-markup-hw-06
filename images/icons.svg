@@ -73,5 +73,12 @@
     <symbol id="icon-vector-succes" viewBox="0 0 40 32">
       <path d="M33.782 1.02a3.668 3.668 0 0 1 5.115.039 3.712 3.712 0 0 1 .135 5.141L19.454 30.817a3.674 3.674 0 0 1-4.074.914 3.675 3.675 0 0 1-1.226-.815L1.17 17.862A3.693 3.693 0 0 1-.001 15.22a3.714 3.714 0 0 1 1.077-2.682 3.664 3.664 0 0 1 4.1-.763 3.68 3.68 0 0 1 1.195.857l10.275 10.325 17.042-21.83c.031-.038.063-.074.098-.109h-.005z"/>
     </symbol>
+    <symbol id="icon-charm-menu-hamburger" viewBox="0 0 47 32">
+      <path fill="#e5e5e5" style="fill:var(--color1, #e5e5e5)" d="M0 0h46.545v32H0V0z"/>
+      <path fill="#fff" style="fill:var(--color2, #fff)" d="M-552.727-34.909H69.818v7211.636h-622.545V-34.909z"/>
+      <path fill="#fff" style="fill:var(--color2, #fff)" d="M-552.727-34.909H69.818V66.909h-622.545V-34.909z"/>
+      <path fill="none" stroke="#e7e9fc" style="stroke:var(--color3, #e7e9fc)" stroke-width="1.454" d="M-552-34.182H69.091V66.182H-552V-34.182z"/>
+      <path fill="none" stroke="#2e2f42" style="stroke:var(--color4, #2e2f42)" stroke-linejoin="round" stroke-linecap="round" stroke-width="4.364" d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"/>
+    </symbol>
   </defs>
 </svg>
