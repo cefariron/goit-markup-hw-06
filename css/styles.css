@@ -681,7 +681,7 @@ button {
 @media only screen and (min-width: 1158px) {
   .section-portfolio {
     padding-top: 100px;
-    padding-bottom: 120px; 
+    padding-bottom: 120px;
   }
 }
 
@@ -698,7 +698,7 @@ button {
 
 @media only screen and (min-width: 1158px) {
   .filter-button-block {
-    margin-bottom: 72px; 
+    margin-bottom: 72px;
   }
 }
 
@@ -756,6 +756,7 @@ button {
     row-gap: 72px;
     column-gap: 24px;
   }
+
   .row-item {
     width: calc((100% - 24px) / 2);
   }
@@ -768,6 +769,7 @@ button {
     row-gap: 48px;
     column-gap: 24px;
   }
+
   .row-item {
     width: calc((100% - 48px) / 3);
   }
@@ -778,9 +780,9 @@ button {
 }
 
 @media only screen and (max-width: 767px) {
-.row-item:not(:last-child) {
-  margin-bottom: 48px;
-}
+  .row-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -802,8 +804,7 @@ button {
 }
 
 .row-list-item.link:hover,
-.row-list-item.link:focus
-.row-list-item.link:active {
+.row-list-item.link:focus .row-list-item.link:active {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
